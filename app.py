@@ -1,10 +1,5 @@
 import streamlit as st
 import pandas as pd
-import subprocess
-import sys
-
-# Force install joblib at runtime
-subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib==1.3.2"])
 
 import joblib
 
