@@ -6,9 +6,14 @@ import pickle
 # -----------------------------
 # Load model, scaler, and feature columns
 # -----------------------------
-model = pickle.load('loan_approval_model.pkl')
-scaler = pickle.load('scaler.pkl')
-feature_columns = pickle.load('feature_columns.pkl')
+with open('loan_approval_model.pkl', 'rb') as f:
+    model = pickle.load(f)
+with open('scaler.pkl', 'rb') as f:
+    scaler = pickle.load(f)
+with open('feature_columns.pkl', 'rb') as f:
+    feature_columns = pickle.load(f)
+# scaler = pickle.load('scaler.pkl')
+# feature_columns = pickle.load('feature_columns.pkl')
 
 # -----------------------------
 # App Title
