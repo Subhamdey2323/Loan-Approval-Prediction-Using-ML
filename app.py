@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-import joblib
+import pickle
 
 # -----------------------------
 # Load model, scaler, and feature columns
 # -----------------------------
-model = joblib.load('loan_approval_model.pkl')
-scaler = joblib.load('scaler.pkl')
-feature_columns = joblib.load('feature_columns.pkl')
+model = pickle.load('loan_approval_model.pkl')
+scaler = pickle.load('scaler.pkl')
+feature_columns = pickle.load('feature_columns.pkl')
 
 # -----------------------------
 # App Title
